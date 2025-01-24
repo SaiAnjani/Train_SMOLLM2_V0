@@ -1,4 +1,4 @@
-# Training model with SmolLM2-135M architecture: A Lightweight Language Model Implementation
+# Training model based on SmolLM2-135M architecture
 
 This is an implementation of a SMOlLM2  model designed for efficient text generation while maintaining good performance.
 
@@ -24,7 +24,7 @@ The model tried to mimic SMOlLM2-135M architecture with several optimizations:
    intermediate_size: 1536  # MLP intermediate size
    num_key_value_heads: 3   # Number of KV heads
    ```
-   Total Parameters: 134,515,008
+        Total Parameters: 134,515,008
         Trainable Parameters: 134,515,008
 
         Layer-wise parameters:
@@ -121,12 +121,12 @@ The interface provides:
 
 ## Project Structure
 
-├── model.py # Core model implementation
-├── train.py # Training script
-├── app.py # Gradio interface
-├── requirements.txt # Dependencies
-├── Dockerfile # Container configuration
-└── README.md # Documentation
+    ├── model.py # Core model implementation
+    ├── train.py # Training script
+    ├── app.py # Gradio interface
+    ├── requirements.txt # Dependencies
+    ├── Dockerfile # Container configuration
+    └── README.md # Documentation
 
 
 
@@ -143,14 +143,10 @@ The interface provides:
 2. **Training Optimizations**
    - Gradient accumulation
    - Mixed precision training
-   - Efficient checkpointing
+   - Efficient checkpointing [Checkpoint after 1000 steps, loading from checkpoint]
    - Performance monitoring
 
-3. **Generation Features**
-   - Temperature scaling
-   - Top-k sampling
-   - Configurable sequence length
-   - Memory-efficient generation
+
 
 
 ## Training Logs
