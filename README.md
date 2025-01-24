@@ -1,10 +1,10 @@
 # Training model based on SmolLM2-135M architecture
 
-This is an implementation of a SMOlLM2  model designed for efficient text generation while maintaining good performance.
+This is an implementation inspired from SMOlLM2-135M model designed for efficient text generation while maintaining good performance as part of learning exercise on training the model.
 
-## Model Architecture
+## Model Implementation
 
-The model tried to mimic SMOlLM2-135M architecture with several optimizations:
+The implementation with several optimizations:
 
 ### Key Components:
 
